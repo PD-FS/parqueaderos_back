@@ -1,0 +1,67 @@
+<%= form_with(model: schedule, local: true) do |form| %>
+  <% if schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(schedule.errors.count, "error") %> prohibited this schedule from being saved:</h2>
+
+      <ul>
+      <% schedule.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :spaceId_id %>
+    <%= form.text_field :spaceId_id, id: :schedule_spaceId_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userId_id %>
+    <%= form.text_field :userId_id, id: :schedule_userId_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vehicleId_id %>
+    <%= form.text_field :vehicleId_id, id: :schedule_vehicleId_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :schedule_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :startTime %>
+    <%= form.text_field :startTime, id: :schedule_startTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endTime %>
+    <%= form.text_field :endTime, id: :schedule_endTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :costSubscribed %>
+    <%= form.number_field :costSubscribed, id: :schedule_costSubscribed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discount %>
+    <%= form.number_field :discount, id: :schedule_discount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :totalCost %>
+    <%= form.number_field :totalCost, id: :schedule_totalCost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paymentMode %>
+    <%= form.text_field :paymentMode, id: :schedule_paymentMode %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

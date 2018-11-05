@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parkingid:</strong>
+  <%= @parking_type.parkingId %>
+</p>
+
+<p>
+  <strong>Vehicletypeid:</strong>
+  <%= @parking_type.vehicleTypeId %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @parking_type.description %>
+</p>
+
+<%= link_to 'Edit', edit_parking_type_path(@parking_type) %> |
+<%= link_to 'Back', parking_types_path %>

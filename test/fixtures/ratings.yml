@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parking: MyString
+  parkingId: one
+  userId: one
+  date: 2018-11-05
+  score: 
+  observations: MyString
+
+two:
+  parking: MyString
+  parkingId: two
+  userId: two
+  date: 2018-11-05
+  score: 
+  observations: MyString

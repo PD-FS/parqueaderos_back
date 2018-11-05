@@ -1,0 +1,47 @@
+<%= form_with(model: rating, local: true) do |form| %>
+  <% if rating.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
+
+      <ul>
+      <% rating.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :parking %>
+    <%= form.text_field :parking, id: :rating_parking %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parkingId_id %>
+    <%= form.text_field :parkingId_id, id: :rating_parkingId_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userId_id %>
+    <%= form.text_field :userId_id, id: :rating_userId_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :rating_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.text_field :score, id: :rating_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :observations %>
+    <%= form.text_field :observations, id: :rating_observations %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

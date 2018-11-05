@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @parking.name %>
+</p>
+
+<p>
+  <strong>Typedocument:</strong>
+  <%= @parking.typeDocument %>
+</p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @parking.document %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @parking.address %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @parking.userId %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @parking.phone %>
+</p>
+
+<p>
+  <strong>Movil:</strong>
+  <%= @parking.movil %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @parking.email %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @parking.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @parking.longitude %>
+</p>
+
+<p>
+  <strong>Servicedays:</strong>
+  <%= @parking.serviceDays %>
+</p>
+
+<p>
+  <strong>Openingtime:</strong>
+  <%= @parking.openingTime %>
+</p>
+
+<p>
+  <strong>Closingtime:</strong>
+  <%= @parking.closingTime %>
+</p>
+
+<%= link_to 'Edit', edit_parking_path(@parking) %> |
+<%= link_to 'Back', parkings_path %>
