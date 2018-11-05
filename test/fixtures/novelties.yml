@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scheduleId: one
+  entryState: MyString
+  outputState: MyString
+
+two:
+  scheduleId: two
+  entryState: MyString
+  outputState: MyString

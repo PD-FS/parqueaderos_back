@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spaceId: one
+  userId: one
+  vehicleId: one
+  date: 2018-11-05
+  startTime: MyString
+  endTime: MyString
+  costSubscribed: 1
+  discount: 1
+  totalCost: 1
+  paymentMode: MyString
+
+two:
+  spaceId: two
+  userId: two
+  vehicleId: two
+  date: 2018-11-05
+  startTime: MyString
+  endTime: MyString
+  costSubscribed: 1
+  discount: 1
+  totalCost: 1
+  paymentMode: MyString

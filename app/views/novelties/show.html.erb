@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Scheduleid:</strong>
+  <%= @novelty.scheduleId %>
+</p>
+
+<p>
+  <strong>Entrystate:</strong>
+  <%= @novelty.entryState %>
+</p>
+
+<p>
+  <strong>Outputstate:</strong>
+  <%= @novelty.outputState %>
+</p>
+
+<%= link_to 'Edit', edit_novelty_path(@novelty) %> |
+<%= link_to 'Back', novelties_path %>

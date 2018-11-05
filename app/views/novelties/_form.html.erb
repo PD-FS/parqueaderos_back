@@ -1,0 +1,32 @@
+<%= form_with(model: novelty, local: true) do |form| %>
+  <% if novelty.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(novelty.errors.count, "error") %> prohibited this novelty from being saved:</h2>
+
+      <ul>
+      <% novelty.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :scheduleId_id %>
+    <%= form.text_field :scheduleId_id, id: :novelty_scheduleId_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entryState %>
+    <%= form.text_field :entryState, id: :novelty_entryState %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outputState %>
+    <%= form.text_field :outputState, id: :novelty_outputState %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

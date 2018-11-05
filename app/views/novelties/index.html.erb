@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Novelties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scheduleid</th>
+      <th>Entrystate</th>
+      <th>Outputstate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @novelties.each do |novelty| %>
+      <tr>
+        <td><%= novelty.scheduleId %></td>
+        <td><%= novelty.entryState %></td>
+        <td><%= novelty.outputState %></td>
+        <td><%= link_to 'Show', novelty %></td>
+        <td><%= link_to 'Edit', edit_novelty_path(novelty) %></td>
+        <td><%= link_to 'Destroy', novelty, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Novelty', new_novelty_path %>

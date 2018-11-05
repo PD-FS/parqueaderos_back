@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Spaceid:</strong>
+  <%= @schedule.spaceId %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @schedule.userId %>
+</p>
+
+<p>
+  <strong>Vehicleid:</strong>
+  <%= @schedule.vehicleId %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @schedule.date %>
+</p>
+
+<p>
+  <strong>Starttime:</strong>
+  <%= @schedule.startTime %>
+</p>
+
+<p>
+  <strong>Endtime:</strong>
+  <%= @schedule.endTime %>
+</p>
+
+<p>
+  <strong>Costsubscribed:</strong>
+  <%= @schedule.costSubscribed %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @schedule.discount %>
+</p>
+
+<p>
+  <strong>Totalcost:</strong>
+  <%= @schedule.totalCost %>
+</p>
+
+<p>
+  <strong>Paymentmode:</strong>
+  <%= @schedule.paymentMode %>
+</p>
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>

@@ -1,0 +1,82 @@
+<%= form_with(model: parking, local: true) do |form| %>
+  <% if parking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(parking.errors.count, "error") %> prohibited this parking from being saved:</h2>
+
+      <ul>
+      <% parking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :parking_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :typeDocument %>
+    <%= form.text_field :typeDocument, id: :parking_typeDocument %>
+  </div>
+
+  <div class="field">
+    <%= form.label :document %>
+    <%= form.text_field :document, id: :parking_document %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :parking_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userId_id %>
+    <%= form.text_field :userId_id, id: :parking_userId_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :parking_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :movil %>
+    <%= form.number_field :movil, id: :parking_movil %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.number_field :email, id: :parking_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :parking_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :parking_longitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :serviceDays %>
+    <%= form.text_field :serviceDays, id: :parking_serviceDays %>
+  </div>
+
+  <div class="field">
+    <%= form.label :openingTime %>
+    <%= form.text_field :openingTime, id: :parking_openingTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :closingTime %>
+    <%= form.text_field :closingTime, id: :parking_closingTime %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
